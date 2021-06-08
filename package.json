@@ -1,8 +1,8 @@
 {
 	"name": "multiline-singleline",
-	"displayName": "Multi-Line to Single-Line",
-	"description": "Convert multi line code to single line so as to fit within a string",
-	"version": "0.0.1",
+	"displayName": "MultiLine to SingleLine",
+	"description": "Convert text/code of multiple lines into single line",
+	"version": "0.0.2",
 	"publisher":"SujayPatil",
 	"icon":"images/icon.png",
 	"author": {
@@ -15,19 +15,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:multiline-singleline.Multi-Line to Single-Line"
+		"onCommand:multiline-singleline.MultiLine to SingleLine"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "multiline-singleline.Multi-Line to Single-Line",
-				"title": "Multi-Line to Single-Line"
+				"command": "multiline-singleline.MultiLine to SingleLine",
+				"title": "MultiLine to SingleLine"
 			}
 		],
 		"keybindings": [
 			{
-			  "command": "multiline-singleline.Multi-Line to Single-Line",
+			  "command": "multiline-singleline.MultiLine to SingleLine",
 			  "key": "ctrl+alt+1",
 			  "mac": "cmd+alt+1",
 			  "when": "editorTextFocus"
