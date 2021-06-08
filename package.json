@@ -3,6 +3,11 @@
 	"displayName": "Multi-Line to Single-Line",
 	"description": "Convert multi line code to single line so as to fit within a string",
 	"version": "0.0.1",
+	"publisher":"SujayPatil",
+	"icon":"images/icon.png",
+	"author": {
+		"name": "Sujay Patil"
+	},
 	"engines": {
 		"vscode": "^1.56.0"
 	},
@@ -44,5 +49,10 @@
 		"mocha": "^8.4.0",
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sujupa/MultiLine-SingleLine"
+	  },
+	  "homepage": "https://github.com/sujupa/MultiLine-SingleLine/blob/master/README.md"
 }

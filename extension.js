@@ -26,7 +26,6 @@ function activate(context) {
 
 		if(text){
 			var convertedText = text.replace(/\n/g, ' ');
-			//convertedText = convertedText.replaceAll(/\"/g, "'");
 			convertedText = convertedText.replace(/\s\s+/g, ' ');
 	
 			editor.edit(builder => builder.replace(selection, convertedText));
