@@ -24,15 +24,20 @@ function activate(context) {
 		const selection = editor.selection;
 		const text = editor.document.getText(selection);
 
-		var convertedText = text.replace(/\n/g, ' ');
-		//convertedText = convertedText.replaceAll(/\"/g, "'");
-
-		convertedText = convertedText.replace(/\s\s+/g, ' ');
-
-		editor.edit(builder => builder.replace(selection, convertedText));
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage(text);
+		if(text){
+			var convertedText = text.replace(/\n/g, ' ');
+			//convertedText = convertedText.replaceAll(/\"/g, "'");
+			convertedText = convertedText.replace(/\s\s+/g, ' ');
+	
+			editor.edit(builder => builder.replace(selection, convertedText));
+	
+			// Display a message box to the user
+			vscode.window.showInformationMessage("Converted to Single Line!");
+		} else {
+			// Display a message box to the user, if no text has been selected
+			vscode.window.showInformationMessage("Sorry, Please select the text/code you want to convert!");
+		}
+		
 	});
 
 	context.subscriptions.push(disposable);

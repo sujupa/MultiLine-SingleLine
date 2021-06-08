@@ -19,7 +19,15 @@
 				"command": "multiline-singleline.Multi-Line to Single-Line",
 				"title": "Multi-Line to Single-Line"
 			}
-		]
+		],
+		"keybindings": [
+			{
+			  "command": "multiline-singleline.Multi-Line to Single-Line",
+			  "key": "ctrl+alt+1",
+			  "mac": "cmd+alt+1",
+			  "when": "editorTextFocus"
+			}
+		  ]
 	},
 	"scripts": {
 		"lint": "eslint .",
